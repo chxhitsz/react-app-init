@@ -1,6 +1,6 @@
 # 全局样式目录
 
-此处放置全局的样式、Mixin、变量等，文件命名遵循[ee-fe-tools](http://icode.baidu.com/repos/baidu/ee-fe/ee-fe-tools/tree/master)的规则：
+此处放置全局的样式、Mixin、变量等，文件命名遵循的规则：
 
 - `xxx.global.less`编写全局样式（不会被css-modules处理）。
 - `xxx.var.less`编写变量（会自动被引入到所有`.less`文件里）。
