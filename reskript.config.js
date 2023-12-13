@@ -22,13 +22,17 @@ exports.featureMatrix = {
  */
 exports.build = {
     appTitle: 'react-app', // TODO: 修改系统名称
+    finalize: webpackConfig => {
+        webpackConfig.output.publicPath = 'http://localhost:3000/assets/'; // TODO: 修改系统资源绝对路径
+        return webpackConfig;
+    },
 };
 
 /**
  * @type ProjectSettings['devServer']
  */
 exports.devServer = {
-    port: 8800, // TODO: 找一个不和其它系统冲突的端口
+    port: 3000, // TODO: 找一个不和其它系统冲突的端口
     apiPrefixes: ['/api'], // TODO: 设置后端API的URL前缀
-    defaultProxyDomain: 'localhost', // TODO: 设置后端测试环境域名
+    defaultProxyDomain: 'localhost', // TODO: 设置后端测试联调环境域名或ip
 };

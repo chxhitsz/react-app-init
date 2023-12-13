@@ -14,11 +14,10 @@ const Welcome = () => (
             <li>做一次<code>npm update</code>升级所有的依赖，建议再使用<code>npm outdated</code>检查下是否有可以升级的大版本。</li>
             <li>搜索各处的<code>TODO</code>并相应修改。</li>
             <li>将<code>git remote</code>修改为自己的库。</li>
-            <li>将全部的Commit合并成一个（自行Google怎么做）。</li>
             <li>将代码提交到自己的产品代码库中。</li>
             <li>确保流水线等都是正确的，能通过构建。</li>
         </ul>
-        <p>最后，有了业务代码后，记得删除这个组件。</p>
+        <p>最后，有了业务代码后，记得删除这个页面组件。</p>
     </div>
 );
 
